@@ -22,6 +22,11 @@ This project is a React application that displays user data in a virtualized tab
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
-
+  git clone https://github.com/Devang96870/virtualscrolltable-test.git
+  ### 2. Install dependencies
+  cd virtualtable
+  npm install
+  ### 3. Start the application
+  npm run dev
 ```bash
 
