@@ -1,0 +1,131 @@
+/* Center page vertically and horizontally */
+.page-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  width: 95%;
+  max-width: 1100px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 16px;
+}
+
+/* Table wrapper */
+.table-wrapper {
+  border: 1px solid #ccc;
+  overflow: auto;
+  background: white;
+}
+
+/* Header and rows */
+.table-header,
+.table-row {
+  display: flex;
+  width: 100%;
+  min-width: 850px;
+}
+
+.table-header {
+  background-color: #e0e0e0;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Base cell style */
+.cell {
+  padding: 8px;
+  border-right: 1px solid #eee;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+/* Hover to show full content (optional) */
+.cell:hover {
+  background-color: #f4f4f4;
+  white-space: normal;
+  overflow: visible;
+  word-break: break-word;
+  z-index: 2;
+}
+
+/* Fixed widths for all columns */
+.cell.id {
+  width: 120px;
+  max-width: 120px;
+}
+
+.cell.name {
+  width: 120px;
+  max-width: 120px;
+}
+
+.cell.state {
+  width: 120px;
+  max-width: 120px;
+}
+
+.cell.country {
+  width: 120px;
+  max-width: 120px;
+}
+
+.cell.email {
+  width: 200px;
+  max-width: 200px;
+}
+
+.cell.phone {
+  width: 150px;
+  max-width: 150px;
+}
+
+.cell.class {
+  width: 80px;
+  max-width: 80px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .cell {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .table-header,
+  .table-row {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cell {
+    font-size: 10px;
+    padding: 4px;
+  }
+  .table-header,
+  .table-row {
+    min-width: 600px;
+  }
+}
