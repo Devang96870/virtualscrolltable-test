@@ -17,7 +17,7 @@ This project is a React application that displays user data in a virtualized tab
 - react-window
 - CSS (custom)
 
--- Optional: add screenshot image if needed -->
+
 
 ## 🚀 Getting Started
 
